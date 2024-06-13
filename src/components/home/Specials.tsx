@@ -51,15 +51,15 @@ export const Specials = () => {
     );
   };
   return (
-    <div className="specials">
-      <div className="specials-title">
+    <section className="specials">
+      <div className="specials__title">
         <h2>Specials</h2>
         <button className="primaryBtn">Online Menu</button>
       </div>
 
-      <div className="specials-list">
+      <div className="specials__list">
         {specials.map((dish) => renderSpecials(dish))}
       </div>
-    </div>
+    </section>
   );
 };
